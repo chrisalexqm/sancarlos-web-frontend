@@ -1,27 +1,15 @@
-<template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        san-carlos-web
-      </h1>
-      <h2 class="subtitle">
-        Sitio web para San Carlos Educa 2019
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
-  </div>
+<template lang="pug">
+  .container
+    .md_flex
+      .md_flex-shrink-0
+        img.rounded-lg.md_w-56(src='https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=448&q=80', alt='Woman paying for a purchase')
+      .mt-4.md_mt-0.md_ml-6
+        .uppercase.tracking-wide.text-sm.text-indigo-600.font-bold.background-green Marketing
+        a.block.mt-1.text-lg.leading-tight.font-semibold.text-gray-900.hover_underline(href='#') Finding customers for your new business
+        p.mt-2.text-gray-600
+          | Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.
+        button.bg-blue-500.hover_bg-blue-400.text-white.font-bold.py-2.px-4.border-b-4.border-blue-700.hover_border-blue-500.rounded
+          | Button
 </template>
 
 <script>
@@ -34,35 +22,6 @@ export default {
 }
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+<style lang="scss">
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>
