@@ -24,7 +24,8 @@ export default {
    ** Global CSS
    */
   css: [
-    '~assets/styles/main.scss'
+    '~assets/styles/main.scss',
+    '~assets/fonts/poppins.css'
   ],
   /*
    ** Plugins to load before mounting the App
