@@ -1,10 +1,11 @@
 <template lang="pug">
   .main
-    .wrapper
-      nav.topbar.flex.items-center.justify-between.bg-white
-        .logo
-          img.logo_img(src='~/assets/logo.svg')
-        .menu
+    .topbar.bg-white
+      .wrapper
+        nav.topbar-container.flex.items-center.justify-between
+          .logo
+            img.logo_img(src='~/assets/logo.svg')
+          .menu
     section.welcome-section.flex.flex-col.justify-between
       p.welcome-section__title.text-center.text-5xl.font-bold.text-white.leading-none.cover-page-shadow.whitespace-pre.mt-12.z-10
         | EDUCACIÓN SIN LÍMITES
@@ -53,7 +54,11 @@
               label.block.text-gray-700.text-sm.font-bold.mb-2
                 | Correo electrónico *
               input.shadow.appearance-none.border-gray-300.rounded.w-full.py-2.px-3.text-gray-700.leading-tight(class='focus_outline-none focus_shadow-outline', type='text', placeholder='Correo electrónico')
-      </button>
+          .flex.justify-center.mt-6.mb-2
+                button(class="bg-green text-white font-medium py-2 px-4 rounded focus_outline-none focus_shadow-outline" type="button")
+                  | Enviar
+    section.footer.flex.justify-center.items-center
+      span.text-xs.text-gray-700 ©2019 Asesoria Educativa San Carlos.
 </template>
 
 <script>
@@ -72,7 +77,7 @@ export default {
 </script>
 
 <style lang="scss">
-  nav.topbar{
+  .topbar-container{
     height: 60px;
   }
   img.logo_img {
@@ -98,5 +103,8 @@ export default {
   }
   .button-one, .button-two {
     width: 240px;
+  }
+  .footer {
+    height: 60px;
   }
 </style>
