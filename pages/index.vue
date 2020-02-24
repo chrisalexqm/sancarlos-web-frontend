@@ -12,9 +12,9 @@
           p.welcome-section__title.text-left.text-4xl.font-bold.text-white.leading-none.whitespace-pre
             | Educación sin límites
             | con San Carlos
-          .welcome-section__buttons.flex.mt-2
-            vs-button.welcome-section__button.lineheight-100(size="large" circle :color="colors.orange" to="/cursos/estimulacion-temprana") Estimulación temprana
-            vs-button.welcome-section__button.lineheight-100(size="large" circle :color="colors.green" to="/cursos/auxiliar-educacion-inicial") Auxiliar de educación inicial
+          .welcome-section__buttons.flex.justify-between.mt-2
+            button.welcome-section__button.bg-orange.text-white.rounded-6.lineheight-100.px-4.py-2(@click="$router.push('/cursos/estimulacion-temprana')") Estimulación temprana
+            button.welcome-section__button.bg-green.text-white.rounded-6.lineheight-100.px-4.py-2(@click="$router.push('/cursos/auxiliar-educacion-inicial')") Auxiliar de educación inicial
         .color-overlay
       section.form-section.mt-8.mb-6
           p.form-section__title.text-center.text-3xl.font-bold.text-black-blue.mb-8
@@ -49,7 +49,7 @@
                   | Correo electrónico *
                 input.bg-body.text-xs.font-normal.text-black-light.rounded-2.w-full.py-2.px-3.leading-tight(class='focus_outline-none focus_shadow-outline', type='text', placeholder='Correo electrónico')
             .flex.justify-center.mt-6.mb-2
-                  vs-button(size="large" circle :color="colors.green") Enviar
+                  button.bg-green.text-white.rounded-6.lineheight-100.px-4.py-2 Enviar
     section.footer.flex.justify-center.items-center
       span.text-xs.text-gray-700 ©2019 Asesoria Educativa San Carlos.
 </template>
