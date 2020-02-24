@@ -13,6 +13,7 @@ module.exports = {
         'orange': '#F27F0C',
         'black': '#383838',
         'black-light': '#606060',
+        'black-blue': '#2C3E50',
         'white': '#FFFFFF',
         'body': '#F4F5F9',
       },
@@ -22,6 +23,7 @@ module.exports = {
         'orange': '#F27F0C',
         'black': '#383838',
         'black-light': '#606060',
+        'black-blue': '#2C3E50',
         'white': '#FFFFFF',
         'body': '#F4F5F9',
       },
@@ -43,12 +45,26 @@ module.exports = {
       '14': '70px',
       '15': '75px',
       '16': '80px',
+    },
+    borderRadius: {
+      '0': '0',
+      '1': '5px',
+      '2': '10px',
+      '3': '15px',
+      '4': '20px',
+      '5': '25px',
+      '6': '30px',
+      '7': '35px',
+      '8': '40px',
+      '9': '45px',
+      '10': '50px',
+      'full': '9999px',
     }
   },
   variants: {},
   plugins: [],
   separator: '_',
   corePlugins: {
-      height: false
+      boxShadow: false
   }
 }
