@@ -29,6 +29,7 @@ module.exports = {
       },
     },
     spacing: {
+      '0': '0',
       '1': '5px',
       '2': '10px',
       '3': '15px',
@@ -59,6 +60,16 @@ module.exports = {
       '9': '45px',
       '10': '50px',
       'full': '9999px',
+    },
+    screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
     }
   },
   variants: {},
