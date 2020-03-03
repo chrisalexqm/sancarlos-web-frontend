@@ -31,7 +31,8 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    '~/plugins/vuesax',
+    { src: 'plugins/svg-sprite.js', ssr: false },
+    '~plugins/global-components',
   ],
   /*
    ** Nuxt.js dev-modules

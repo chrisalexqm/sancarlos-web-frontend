@@ -1,11 +1,5 @@
 <template lang="pug">
-  .main
-    .topbar.bg-white.topbar-shadow
-        .wrapper
-            nav.topbar-container.flex.items-center.justify-between
-                nuxt-link.logo(to="/")
-                    img.logo_img(src='~/assets/logo.svg')
-                .menu
+.main
     .wrapper.course-grid.mt-4
         section.first-content
             .course-basic-information.bg-white.rounded-3.regular-shadow
@@ -62,39 +56,31 @@
                 .course-details__body.py-2.px-4
                     ul.details.text-black-blue.text-xs.font-medium
                         li.flex.mb-2
-                            .icon.w-3.h-3
-                                img.w-full.h-full(src='~/assets/images/map-marker-alt-solid.svg')
+                            icon.text-green(name="map-marker")
                             span.ml-1
                                 | Bagua Grande, Chachapoyas, Huaraz y Lima
                         li.flex.mb-2
-                            .icon.w-3.h-3
-                                img.w-full.h-full(src='~/assets/images/calendar-alt-regular.svg')
+                            icon.text-green(name="calendar")
                             span.ml-1
                                 | Sábado (12 meses)
                         li.flex
-                            .icon.w-3.h-3
-                                img.w-full.h-full(src='~/assets/images/clock-regular.svg')
+                            icon.text-green(name="clock")
                             span.ml-1
                                 | 09:00 am - 01:00 pm
                     .separator.bg-body.my-2
                     ul.details.text-black-blue.text-xs.font-medium
                         li.flex.mb-2
-                            .icon.w-3.h-3
-                                img.w-full.h-full(src='~/assets/images/map-marker-alt-solid.svg')
+                            icon.text-green(name="map-marker")
                             span.ml-1
                                 | Juanjuí, Moyobamba, Tarapoto y Yurimaguas
                         li.flex.mb-2
-                            .icon.w-3.h-3
-                                img.w-full.h-full(src='~/assets/images/calendar-alt-regular.svg')
+                            icon.text-green(name="calendar")
                             span.ml-1
                                 | Sábado (12 meses)
                         li.flex
-                            .icon.w-3.h-3
-                                img.w-full.h-full(src='~/assets/images/clock-regular.svg')
+                            icon.text-green(name="clock")
                             span.ml-1
                                 | 08:00 am - 12:00 pm
-    section.footer.flex.justify-center.items-center
-      span.text-xs.text-gray-700 ©2019 Asesoria Educativa San Carlos.
 </template>
 
 <script>
@@ -127,12 +113,6 @@ export default {
 </script>
 
 <style lang="scss">
-    .topbar-container {
-        height: 60px;
-    }
-    img.logo_img {
-        height: 25px;
-    }
     .course-grid {
         display: grid;
         grid-template-columns: 1fr 300px;
@@ -197,8 +177,5 @@ export default {
             grid-column: 2;
             grid-row: 1;
         }
-    }
-    .footer {
-        height: 60px;
     }
 </style>
