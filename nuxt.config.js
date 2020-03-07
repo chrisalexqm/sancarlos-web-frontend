@@ -56,7 +56,7 @@ export default {
   */
   styleResources: {
     scss: [
-      './assets/styles/vars/*.scss'
+      './assets/styles/variables.scss'
     ]
   },
   /*
