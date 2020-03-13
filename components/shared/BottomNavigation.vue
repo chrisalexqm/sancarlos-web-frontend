@@ -32,7 +32,7 @@ export default {
     }
     .bottom-nav__list {
         display: flex;
-        max-width: 375px;
+        max-width: 420px;
         width: 100%;
         justify-content: space-between;
     }
