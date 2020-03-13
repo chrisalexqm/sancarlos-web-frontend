@@ -1,7 +1,7 @@
 <template lang="pug">
-    button(@click="callback($event)")
-        ripple.btn(:class="'btn--' + color + ' btn--' + size + (rounded ? ' btn--rounded' : '')")
-            slot
+    button.btn(:class="'btn--' + color + ' btn--' + size + (rounded ? ' btn--rounded' : '')" @click="callback($event)")
+        ripple
+        slot
 </template>
 <script>
 import Ripple from '~/components/shared/Ripple.vue'
@@ -34,13 +34,15 @@ export default {
 </script>
 <style lang="scss">
     .btn {
+        overflow: hidden;
+        position: relative;
         text-align: center;
         border-radius: 12px;
-        user-select: none;
-        cursor: pointer;
         color: #FFF;
         transition: .3s ease-out;
         border: none;
+        user-select: none;
+        cursor: pointer;
     }
 
     /* Colors */

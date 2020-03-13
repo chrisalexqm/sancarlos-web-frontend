@@ -54,8 +54,12 @@ export default {
 </script>
 <style lang="scss">
     .ripple-outer {
-        position: relative;
+        position: absolute;
         z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         overflow: hidden;
         cursor: pointer;
     }
@@ -66,7 +70,7 @@ export default {
         width: 100%;
         height: 100%;
         z-index: -1;
-        pointer-events:none;
+        pointer-events: none;
     }
     .ripple {
         width: 100%;
@@ -75,6 +79,7 @@ export default {
         border-radius: 50%;
         opacity: 0;
         pointer-events: none;
+        transition: all 700ms ease-out;
     }
 
     .grow-enter-active, .grow-enter-to-active {

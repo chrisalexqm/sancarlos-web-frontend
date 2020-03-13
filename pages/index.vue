@@ -43,7 +43,7 @@
                         | Correo electrónico *
                         input.bg-body.text-xs.font-normal.text-black-light.rounded-2.w-full.py-2.px-3.leading-tight(class='focus_outline-none focus_shadow-outline', type='text', placeholder='Correo electrónico')
                 .flex.justify-center.mt-6.mb-2
-                    sc-button Enviar
+                    sc-button(size="lg") Enviar
 </template>
 
 <script>

@@ -8,10 +8,14 @@ body {
     background: #F4F5F9;
 }
 
-// Remove default blue border
-a:focus,
-button:focus,
-input:focus,
-textarea:focus {
-    outline: none;
+// Remove default blue border and highlight
+input,
+textarea,
+button,
+a {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    &:focus {
+        outline: none;
+    }
 }
