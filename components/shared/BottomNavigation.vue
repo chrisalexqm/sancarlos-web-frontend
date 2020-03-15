@@ -3,19 +3,19 @@
         ul.bottom-nav__list.px-4.py-2
             nuxt-link.bottom-nav__item(tag="li" to="/nosotros" exact)
                 icon.item__icon(name="users" size="md")
-                span.item__text.font-medium.ml-1 Nosotros
+                span.item__text.font-medium Nosotros
             nuxt-link.bottom-nav__item(tag="li" to="/cursos")
                 icon.item__icon(name="books" size="md")
-                span.item__text.font-medium.ml-1 Cursos
+                span.item__text.font-medium Cursos
             nuxt-link.bottom-nav__item(tag="li" to="/sedes")
                 icon.item__icon(name="school" size="md")
-                span.item__text.font-medium.ml-1 Sedes
+                span.item__text.font-medium Sedes
             nuxt-link.bottom-nav__item(tag="li" to="/testimonios")
                 icon.item__icon(name="user-graduate" size="md")
-                span.item__text.font-medium.ml-1 Testimonios
+                span.item__text.font-medium Testimonios
             nuxt-link.bottom-nav__item(tag="li" to="/noticias")
                 icon.item__icon(name="news" size="md")
-                span.item__text.font-medium.ml-1 Noticias
+                span.item__text.font-medium Noticias
 </template>
 <script>
 export default {
@@ -50,6 +50,7 @@ export default {
             color: $black-blue;
         }
         .item__text {
+            margin-left: 0;
             width: 100%;
             max-width: 0px;
             opacity: 0;
@@ -57,9 +58,10 @@ export default {
             transition: all .5s;
         }
         &.nuxt-link-active {
-            padding: 10px 15px;
+            padding: 10px 10px;
             transition: all .4s;
             .item__text {
+                margin-left: 5px;
                 max-width: 65px;
                 opacity: 1;
                 transition: all .4s;
